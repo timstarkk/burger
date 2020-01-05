@@ -1,11 +1,12 @@
 const express = require('express');
+// const path = require('path');
 
 
 const PORT = process.env.PORT || 3333;
 const app = express();
 
-// set the public folder to be available on client side
-app.use(express.static('public'));
+// make public folder available
+app.use(express.static("public"));
 // ------------------
 
 // prepare express to handle data

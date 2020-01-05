@@ -14,11 +14,15 @@ router.get('/burgers', (req, res) => {
 })
 
 
-router.get('/burgers/create', (req, res) => {
+router.post('/burgers/create', (req, res) => {
     burger.create(req.body.burger_name, function (result) {
         console.log(result);
         res.redirect("/");
     });
+
+    // console.log(req);
+
+    // // res.console.log(req)
 });
 
 
